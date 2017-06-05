@@ -136,7 +136,7 @@ email: "messaoudi.oussama.in@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "MESSAOUDI Oussama is an awesome person. He lives in Morocco, where he works. In his spare time, Oussama likes to chill."
+author_blurb: "talk is cheap show me the code"
 author_blurb_image: "/img/author.png"
 
 ##################

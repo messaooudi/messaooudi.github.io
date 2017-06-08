@@ -1,0 +1,20 @@
+manga #container {
+    position: fixed;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    top : 0px;
+    bottom : 0px;    
+    width: 100%;
+    overflow: auto;
+}
+
+
+manga #container button{
+     display: block;
+     width: 300px;
+     height: 60px;
+     margin: auto;
+     margin-top: 15px;
+     white-space: normal !important;
+     word-wrap: break-word;
+}

@@ -1,0 +1,27 @@
+<header>
+    <div id="right_container">
+        </button>
+        <button id="more_button" ng-click="scans.moreButton.click($event)">
+<span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+</button>
+    </div>
+
+    <div id="more_container" ng-class="{show_more_container : manga.moreContainer._show}">
+        <ul class="list-group">
+            <button class="list-group-item" ui-sref="scan({manga : '{{scans.manga}}',scan : {{$index}},page : 0})" ng-repeat="n in scans.titles track by $index">{{$index+1}}</button>
+        </ul>
+    </div>
+
+    <div id="header_label" class="col-xs-9">
+        <label>{{manga.manga}} <span class="badge">{{scan.page}}</span> </label>
+    </div>
+
+    <button id="menu_button" ui-sref="mangas">
+<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+</button>
+</header>
+<div id="container">
+    <button id="scans" ui-sref="scans({manga : '{{manga.manga}}'})" type="button" class="btn btn-default">Scans</button>
+    <button id="films" type="button" class="btn btn-default">Films<br><span class="badge">coming soon</span></button></button>
+    <button id="ovas"  type="button" class="btn btn-default">Ovas<br><span class="badge">coming soon</span></button>
+</div>

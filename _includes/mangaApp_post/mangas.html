@@ -1,0 +1,33 @@
+<header>
+    <div id="right_container">
+        </button>
+        <button id="more_button" ng-click="mangas.moreButton.click($event)">
+<span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+</button>
+    </div>
+
+    <div id="more_container" ng-class="{show_more_container : mangas.moreContainer._show}">
+        <ul class="list-group">
+            <button class="list-group-item" ui-sref="scan({id : {{$index}},page : 0})" ng-repeat="n in mangas.titles track by $index">{{$index}}</button>
+        </ul>
+    </div>
+
+    <div>
+    </div>
+</header>
+
+<div id="container">
+    <div class="sk-folding-cube" ng-if="mangas.loadingData">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <div class="search">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input type="text" class="form-control" ng-model="searchQuery" placeholder="Search ...">
+        </div>
+    </div>
+    <button ui-sref="manga({manga : '{{manga.title}}'})" type="button" class="btn btn-default" ng-repeat="(key,manga) in mangas.list | filter : searchQuery">{{manga.title}}</button>
+</div>

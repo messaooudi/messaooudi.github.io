@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: "StationGo : Angular-Meteaor + leaftlet = awsome App"
+title: "StationGo : Angular-Meteaor + leaftlet = awesome App"
 category: 'web dev'
 tags: [ 'Meteor', 'Angular', 'nodejs','leaftlet','ES6' ]
 ---
